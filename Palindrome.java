@@ -10,9 +10,7 @@ public class Palindrome {
 		if (s.length() < 2) return true;
 
 		boolean polindrom = s.charAt(0) == s.charAt(s.length() - 1);
-		if (s.length() == 2) return (!polindrom) ? false : true;
-		
-		String newS = s.substring(1, s.length() - 2);
+		String newS = s.substring(1, s.length() - 1);
 		return (!polindrom) ? false : true && isPalindrome(newS);
     }
 }
